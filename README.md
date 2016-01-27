@@ -11,7 +11,7 @@ https://www.nuget.org/packages/Ballance.Retry/
 
 ### Usage
 #### Add 1+1
-    var 2 = fibonacciRetry.Do(() => 1+1);
+    var two = fibonacciRetry.Do(() => 1+1);
 
 #### Fail ten times, then succeed
     var exceptions = new List<Exception>();  
