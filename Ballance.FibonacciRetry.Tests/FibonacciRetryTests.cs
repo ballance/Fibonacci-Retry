@@ -14,9 +14,8 @@ namespace Ballance.Retry.Tests
         [Test]
         public void ShouldRunBaseCase_WhenCalledWithDefault()
         {
-            var fibonacciRetry = new FibonacciRetry();
             var i = 0;
-            var ret = fibonacciRetry.Do<object>((() => $"Hello {i++}"));
+            var ret = new FibonacciRetry().Do<object>((() => $"Hello {i++}"));
             Assert.AreEqual("Hello 0", ret);
         }
 
@@ -37,7 +36,7 @@ namespace Ballance.Retry.Tests
             Assert.AreEqual(default(object), fibonacciRetry.Do<object>(() => 27 / i));
         }
 
-        private static Random rand;
+        internal static Random rand;
 
         /// <summary>
         /// Tries to find an even integer from a random input
@@ -46,11 +45,9 @@ namespace Ballance.Retry.Tests
         [Test]
         public void ShouldEventuallyFindAnEvenRandomInteger_WhenGivenRandomInteger()
         {
-
-            var fibonacciRetry = new FibonacciRetry();
+            
             var exceptionList = new List<Exception>();
-            var rand = new Random();
-            var evenNumberFound = fibonacciRetry.Do(() =>
+            var evenNumberFound = new FibonacciRetry().Do(() =>
             {
                 var randInt = rand.Next(0, 10000);
                 if (randInt % 2 == 0)
