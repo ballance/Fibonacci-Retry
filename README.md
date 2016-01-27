@@ -40,6 +40,3 @@ https://www.nuget.org/packages/Ballance.Retry/
  - Additional Unit tests
  - Improve documentation
 
-#### Nuget Package
-
-[Ballance.FibonacciRetry](https://github.com/ballance/FibonacciRetry)
