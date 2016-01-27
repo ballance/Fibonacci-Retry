@@ -4,6 +4,10 @@ Some C# code to help with the common problem of retries.  Retries start at a sho
 #### A word of caution
 It is almost never a good idea to just retry something unless you fully understand why retrying is the best approach.  I caution against using this code as a further shovel to try and dig yourself out of a try/catch/ignore hole you've dug yourself into.  In the long run, it will nearly always make things worse.
 
+### NuGet package
+https://www.nuget.org/packages/Ballance.Retry/
+    install-package Ballance.Retry
+
 ### Usage
 #### Add 1+1
     var 2 = fibonacciRetry.Do(() => 1+1);
