@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Package</id>
+    <version>1.0.0</version>
+    <authors>Chris Ballance</authors>
+    <owners>Chris Ballance</owners>
+    <licenseUrl>http://ballance.it/fibonacci_retry_license.txt</licenseUrl>
+    <projectUrl>http://ballance.it</projectUrl>
+    <iconUrl>http://ballance.it/assets/fibonacci.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fibonacci Retry code for .NET </description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Retry Fibonacci C#</tags>
+  </metadata>
+</package>
