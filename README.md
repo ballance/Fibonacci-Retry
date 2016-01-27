@@ -6,6 +6,7 @@ It is almost never a good idea to just retry something unless you fully understa
 
 ### NuGet package
 https://www.nuget.org/packages/Ballance.Retry/
+
     install-package Ballance.Retry
 
 ### Usage
