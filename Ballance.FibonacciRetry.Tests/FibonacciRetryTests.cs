@@ -21,6 +21,15 @@ namespace Ballance.Retry.Tests
         }
 
         [Test]
+        public void ShouldDoSimpleTask_WhenAsked()
+        {
+            var two = new FibonacciRetry().Do(() => 1+1);
+            Assert.AreEqual(2, two);
+           
+        }
+
+
+        [Test]
         public void ShouldReturnDefaultOfT_WhenDividingByZero()
         {
             var fibonacciRetry = new FibonacciRetry();
